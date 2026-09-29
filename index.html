@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- Makes the page fit the screen on phones and tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Utsav Kuntalwad | Developer &amp; Student</title>
-  <!-- Google Fonts: Source Sans Pro -->
+
+  <!-- Loads the font and the CSS file -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* Small custom student/human accents that blend with style.css */
-    
-  </style>
 </head>
+
 <body>
 
-  <!-- Top Navigation Header -->
+  <!-- My name and the navigation links at the top of the page -->
   <header class="main-header">
     <div class="nav-container">
       <div class="nav-logo">
@@ -25,7 +26,9 @@
           <span class="logo-name">UTSAV KUNTALWAD</span>
         </a>
       </div>
-      <nav class="nav-menu">
+
+      <!-- These links jump to different sections of the page -->
+      <nav class="nav-menu" aria-label="Main navigation">
         <a href="#hero" class="nav-link">HOME</a>
         <a href="#about" class="nav-link">ABOUT</a>
         <a href="#projects" class="nav-link">PROJECTS</a>
@@ -33,331 +36,467 @@
         <a href="#blog" class="nav-link">BLOG</a>
         <a href="#contact" class="nav-link">CONTACT</a>
       </nav>
-      <div class="clear"></div>
+
+      <!-- On smaller screens, clicking Menu opens or closes these links -->
+      <details class="mobile-nav">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile navigation">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </details>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero-section">
-    <div class="hero-inner">
-      <div class="status-badge">
-        <span class="status-pulse"></span>Grad Student @ University of New Haven (Class of '26)
-      </div>
-      <h1 class="hero-title">HEY, I'M UTSAV! 👋</h1>
-      <p class="hero-subtext">
-        I'm a grad student who turns late-night caffeine into functional code. I build web apps, tweak database schemas, and wrestle with Python scripts until they finally run without errors.
-      </p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">CHECK OUT MY WORK</a>
-      </div>
-    </div>
-  </section>
+  <!-- The main content of my portfolio -->
+  <main>
 
-  <!-- About Me & Skills Section -->
-  <section id="about" class="section-container bg-light">
-    <div class="section-content">
-      <div class="section-title-wrap">
-        <h2 class="section-heading">ABOUT ME</h2>
-        <div class="heading-bar"></div>
-        <p class="section-subtext">
-          A quick look into who I am, what I'm building, and the tech stack I spend most of my days in.
+    <!-- A short introduction and a link to my projects -->
+    <section id="hero" class="hero-section">
+      <div class="hero-inner">
+        <div class="status-badge">
+          <span class="status-pulse"></span>
+          Grad Student @ University of New Haven (Class of '26)
+        </div>
+
+        <h1 class="hero-title">HEY, I'M UTSAV! 👋</h1>
+
+        <p class="hero-subtext">
+          I'm a grad student who turns late-night caffeine into functional code.
+          I build web apps, tweak database schemas, and wrestle with Python
+          scripts until they finally run without errors.
         </p>
-      </div>
 
-      <div class="about-two-col">
-        <!-- Left: Narrative & Education -->
-        <div class="about-col-left">
-          <h3 class="col-title">The Non-Corporate Summary ☕</h3>
-          <p class="col-text">
-            I am currently wrapping up my <strong>Master’s in Computer Science</strong> at the <strong>University of New Haven</strong> with a 4.0 GPA (prior undergrad at <strong>Rizvi College of Engineering</strong>). While I take school seriously, I care way more about building things that actual humans can use.
-          </p>
-          <p class="col-text">
-            My favorite zone is the intersection of <strong>backend databases and responsive web apps</strong>. There's something deeply satisfying about designing a clean SQL schema and watching data flow smoothly straight to the frontend.
-          </p>
-          
-          <div class="personal-quote">
-            "90% of my time is thinking through the logic, and the remaining 10% is wondering which file I forgot to save."
-          </div>
-
-          <!-- What I'm doing right now (Human/Realistic Touch) -->
-          <div class="now-box">
-            <h4>📍 What I'm Up To Right Now:</h4>
-            <ul>
-              <li>🔨 Hacking on university web-database prototypes.</li>
-              <li>📖 Reviewing distributed indexing and database isolation levels.</li>
-              <li>☕ Scouting out the best quiet study spots around campus.</li>
-            </ul>
-          </div>
-
-          <div class="fun-facts">
-            <strong>When I'm away from VS Code:</strong><br>
-            <span>🎧 Lo-Fi Playlists</span>
-            <span>📱 Tech Memes</span>
-            <span>⚽ Weekend Pick-up Matches</span>
-            <span>📚 Tech Reading</span>
-          </div>
-
-          <div class="col-cta">
-            <a href="#contact" class="btn btn-primary btn-sm">SAY HELLO</a>
-          </div>
-        </div>
-
-        <!-- Right: Skills Pill Cloud -->
-        <div class="about-col-right">
-          <h3 class="col-title">Tools I Know &amp; Use</h3>
-          <p class="col-text" style="font-size: 14px; margin-bottom: 14px;">
-            (Ranked roughly by how comfortable I feel building with them from scratch without Googling every 5 seconds)
-          </p>
-          <div class="skills-cloud">
-            <span class="skill-pill">Python (Go-to)</span>
-            <span class="skill-pill">SQL &amp; MySQL</span>
-            <span class="skill-pill">PHP &amp; XAMPP</span>
-            <span class="skill-pill">HTML5 &amp; CSS3</span>
-            <span class="skill-pill">JavaScript</span>
-            <span class="skill-pill">Java</span>
-            <span class="skill-pill">SQL Server</span>
-            <span class="skill-pill">Machine Learning Basics</span>
-            <span class="skill-pill">OpenCV / EasyOCR</span>
-            <span class="skill-pill">Tableau / Power BI</span>
-            <span class="skill-pill">Git &amp; GitHub</span>
-            <span class="skill-pill">Notion (Life Organizer)</span>
-            <span class="skill-pill">Agile / Scrum</span>
-          </div>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section-container bg-white">
-    <div class="section-content">
-      <div class="section-title-wrap">
-        <h2 class="section-heading">PROJECTS</h2>
-        <div class="heading-bar"></div>
-        <p class="section-subtext">
-          Some projects I've built between assignments and campus hackathons.
-        </p>
-      </div>
-
-      <!-- Project 1 -->
-      <div class="project-showcase-row">
-        <div class="project-mockup-col">
-          <div class="mockup-frame">
-            <div class="mockup-header">
-              <span class="mockup-dot"></span>
-              <span class="mockup-dot"></span>
-              <span class="mockup-dot"></span>
-            </div>
-            <div class="mockup-display">
-              <span class="mockup-tag">Full-Stack Web App</span>
-              <h4 class="mockup-title">Campus Hub &amp; Connectivity</h4>
-              <p style="font-size: 12px; color: #888; margin-top: 6px;">PHP • MySQL • Apache</p>
-            </div>
-          </div>
-        </div>
-        <div class="project-details-col">
-          <h3 class="project-name">Campus Connectivity Web Application</h3>
-          <p class="project-summary">
-            Built this because college bulletin boards get cluttered fast. Developed a clean, campus-focused portal with user logins, role permissions, and full CRUD operations so students can post updates and connect without friction.
-          </p>
-          <p class="personal-quote">
-            Lesson learned: Always validate inputs on the server side because users will test things in ways you never planned for!
-          </p>
-          <p class="project-stack"><strong>Tech Stack:</strong> PHP, MySQL, phpMyAdmin, HTML/CSS, Apache</p>
-          <a href="#contact" class="btn btn-primary btn-sm">VIEW PROJECT NOTES</a>
-        </div>
-        <div class="clear"></div>
-      </div>
-
-      <!-- Project 2 -->
-      <div class="project-showcase-row">
-        <div class="project-mockup-col">
-          <div class="mockup-frame">
-            <div class="mockup-header">
-              <span class="mockup-dot"></span>
-              <span class="mockup-dot"></span>
-              <span class="mockup-dot"></span>
-            </div>
-            <div class="mockup-display">
-              <span class="mockup-tag">Computer Vision</span>
-              <h4 class="mockup-title">AI &amp; Document OCR</h4>
-              <p style="font-size: 12px; color: #888; margin-top: 6px;">Python • OpenCV • ML</p>
-            </div>
-          </div>
-        </div>
-        <div class="project-details-col">
-          <h3 class="project-name">AI &amp; OCR Document Automation</h3>
-          <p class="project-summary">
-            An automated image-parsing script that extracts clean, structured tabular data out of noisy scans and PDFs. Preprocessed images with OpenCV filters (grayscale, thresholding, deskewing) before feeding them into OCR models to bump up extraction accuracy.
-          </p>
-          <p class="personal-quote">
-            The hardest part was handling blurry cellphone photos of printed papers without breaking the parser.
-          </p>
-          <p class="project-stack"><strong>Tech Stack:</strong> Python, EasyOCR, OpenCV, Pandas</p>
-          <a href="#contact" class="btn btn-primary btn-sm">VIEW PROJECT NOTES</a>
-        </div>
-        <div class="clear"></div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="project-showcase-row">
-        <div class="project-mockup-col">
-          <div class="mockup-frame">
-            <div class="mockup-header">
-              <span class="mockup-dot"></span>
-              <span class="mockup-dot"></span>
-              <span class="mockup-dot"></span>
-            </div>
-            <div class="mockup-display">
-              <span class="mockup-tag">Data Engineering</span>
-              <h4 class="mockup-title">Financial Data Pipeline</h4>
-              <p style="font-size: 12px; color: #888; margin-top: 6px;">SQL Server • Python • Tableau</p>
-            </div>
-          </div>
-        </div>
-        <div class="project-details-col">
-          <h3 class="project-name">Financial Metrics &amp; Algorithmic Pipeline</h3>
-          <p class="project-summary">
-            Created data ingestion pipelines that calculate rolling averages and asset volatility across historical datasets. Cleaned up raw anomalies in SQL Server and plugged the final tables into Tableau for easy visualization.
-          </p>
-          <p class="personal-quote">
-            Turns out 80% of data science really is just cleaning and normalizing data before touching any dashboard.
-          </p>
-          <p class="project-stack"><strong>Tech Stack:</strong> SQL Server, Python, Excel, Tableau</p>
-          <a href="#contact" class="btn btn-primary btn-sm">VIEW PROJECT NOTES</a>
-        </div>
-        <div class="clear"></div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Experience & Leadership Section -->
-  <section id="experience" class="section-container bg-light">
-    <div class="section-content">
-      <div class="section-title-wrap">
-        <h2 class="section-heading">CAMPUS LEADERSHIP</h2>
-        <div class="heading-bar"></div>
-        <p class="section-subtext">
-          When I'm not coding, I help run student operations and plan events on campus.
-        </p>
-      </div>
-
-      <div class="card-timeline">
-        <div class="timeline-box">
-          <span class="timeline-role">Vice President of Operations</span>
-          <span class="timeline-org">Graduate Student Council — University of New Haven</span>
-          <p class="timeline-desc">
-            Organizing graduate student activities, managing logistics, and advocating for student resources with university leadership. It taught me how to coordinate between faculty and hundreds of busy students.
-          </p>
-        </div>
-
-        <div class="timeline-box">
-          <span class="timeline-role">Vice President</span>
-          <span class="timeline-org">Indian Student Council</span>
-          <p class="timeline-desc">
-            Planned welcome events, mixers, and campus orientations for incoming students. Lots of moving parts, budget spreadsheets, and making sure everyone felt welcome and supported.
-          </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">CHECK OUT MY WORK</a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Blog / Technical Notes Section -->
-  <section id="blog" class="section-container bg-white">
-    <div class="section-content">
-      <div class="section-title-wrap">
-        <h2 class="section-heading">NOTES &amp; WRITING</h2>
-        <div class="heading-bar"></div>
-        <p class="section-subtext">
-          Short write-ups on things I’ve debugged, concepts I learned the hard way, and quick study guides.
-        </p>
-      </div>
+    <!-- My background, interests, and technical skills -->
+    <section id="about" class="section-container bg-light">
+      <div class="section-content">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">ABOUT ME</h2>
+          <div class="heading-bar"></div>
 
-      <div class="blog-grid">
-        <div class="blog-grid-item">
-          <div class="blog-card">
-            <h4 class="blog-card-title">Why Your SQL Schema Matters Earlier Than You Think</h4>
-            <p class="blog-card-text">
-              Fixing a bad database schema after you've already written all your queries is painful. Here is why taking an afternoon to normalize tables saves weeks of headaches.
+          <p class="section-subtext">
+            A quick look into who I am, what I'm building, and the tech stack
+            I spend most of my days in.
+          </p>
+        </div>
+
+        <div class="about-two-col">
+
+          <!-- My education and current interests go in the left column -->
+          <div class="about-col-left">
+            <h3 class="col-title">The Non-Corporate Summary ☕</h3>
+
+            <p class="col-text">
+              I am currently wrapping up my
+              <strong>Master’s in Computer Science</strong> at the
+              <strong>University of New Haven</strong> with a 4.0 GPA
+              (prior undergrad at <strong>Rizvi College of Engineering</strong>).
+              While I take school seriously, I care way more about building
+              things that actual humans can use.
             </p>
-            <a href="#contact" class="blog-read-more">Read Notes &rarr;</a>
-          </div>
-        </div>
 
-        <div class="blog-grid-item">
-          <div class="blog-card">
-            <h4 class="blog-card-title">Making OCR Actually Work on Crumpled Paper</h4>
-            <p class="blog-card-text">
-              EasyOCR is great out of the box, but real-world scans are messy. A few quick OpenCV thresholding tricks that helped fix my image recognition accuracy.
+            <p class="col-text">
+              My favorite zone is the intersection of
+              <strong>backend databases and responsive web apps</strong>.
+              There's something deeply satisfying about designing a clean SQL
+              schema and watching data flow smoothly straight to the frontend.
             </p>
-            <a href="#contact" class="blog-read-more">Read Notes &rarr;</a>
-          </div>
-        </div>
 
-        <div class="blog-grid-item">
-          <div class="blog-card">
-            <h4 class="blog-card-title">Building My Notion 'Second Brain' For College</h4>
-            <p class="blog-card-text">
-              How setting up the PARA method stopped me from losing lecture bookmarks, project repos, and assignment deadlines during heavy semesters.
+            <div class="personal-quote">
+              "90% of my time is thinking through the logic, and the remaining
+              10% is wondering which file I forgot to save."
+            </div>
+
+            <div class="now-box">
+              <h4>📍 What I'm Up To Right Now:</h4>
+              <ul>
+                <li>🔨 Hacking on university web-database prototypes.</li>
+                <li>📖 Reviewing distributed indexing and database isolation levels.</li>
+                <li>☕ Scouting out the best quiet study spots around campus.</li>
+              </ul>
+            </div>
+
+            <div class="fun-facts">
+              <strong>When I'm away from VS Code:</strong><br>
+              <span>🎧 Lo-Fi Playlists</span>
+              <span>📱 Tech Memes</span>
+              <span>⚽ Weekend Pick-up Matches</span>
+              <span>📚 Tech Reading</span>
+            </div>
+
+            <div class="col-cta">
+              <a href="#contact" class="btn btn-primary btn-sm">SAY HELLO</a>
+            </div>
+          </div>
+
+          <!-- The right column lists the tools I use -->
+          <div class="about-col-right">
+            <h3 class="col-title">Tools I Know &amp; Use</h3>
+
+            <p class="col-text" style="font-size: 14px; margin-bottom: 14px;">
+              (Ranked roughly by how comfortable I feel building with them
+              from scratch without Googling every 5 seconds)
             </p>
-            <a href="#contact" class="blog-read-more">Read Notes &rarr;</a>
+
+            <div class="skills-cloud">
+              <span class="skill-pill">Python (Go-to)</span>
+              <span class="skill-pill">SQL &amp; MySQL</span>
+              <span class="skill-pill">PHP &amp; XAMPP</span>
+              <span class="skill-pill">HTML5 &amp; CSS3</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">SQL Server</span>
+              <span class="skill-pill">Machine Learning Basics</span>
+              <span class="skill-pill">OpenCV / EasyOCR</span>
+              <span class="skill-pill">Tableau / Power BI</span>
+              <span class="skill-pill">Git &amp; GitHub</span>
+              <span class="skill-pill">Notion (Life Organizer)</span>
+              <span class="skill-pill">Agile / Scrum</span>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Examples of projects I have worked on -->
+    <section id="projects" class="section-container bg-white">
+      <div class="section-content">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">PROJECTS</h2>
+          <div class="heading-bar"></div>
+
+          <p class="section-subtext">
+            Some projects I've built between assignments and campus hackathons.
+          </p>
+        </div>
+
+        <!-- Campus connectivity project -->
+        <div class="project-showcase-row">
+          <div class="project-mockup-col">
+            <div class="mockup-frame">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+              </div>
+
+              <div class="mockup-display">
+                <span class="mockup-tag">Full-Stack Web App</span>
+                <h4 class="mockup-title">Campus Hub &amp; Connectivity</h4>
+                <p style="font-size: 12px; color: #888; margin-top: 6px;">
+                  PHP • MySQL • Apache
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details-col">
+            <h3 class="project-name">Campus Connectivity Web Application</h3>
+
+            <p class="project-summary">
+              Built this because college bulletin boards get cluttered fast.
+              Developed a clean, campus-focused portal with user logins,
+              role permissions, and full CRUD operations so students can
+              post updates and connect without friction.
+            </p>
+
+            <p class="personal-quote">
+              Lesson learned: Always validate inputs on the server side because
+              users will test things in ways you never planned for!
+            </p>
+
+            <p class="project-stack">
+              <strong>Tech Stack:</strong>
+              PHP, MySQL, phpMyAdmin, HTML/CSS, Apache
+            </p>
+
+            <a href="#contact" class="btn btn-primary btn-sm">VIEW PROJECT NOTES</a>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+
+        <!-- Document scanning and text extraction project -->
+        <div class="project-showcase-row">
+          <div class="project-mockup-col">
+            <div class="mockup-frame">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+              </div>
+
+              <div class="mockup-display">
+                <span class="mockup-tag">Computer Vision</span>
+                <h4 class="mockup-title">AI &amp; Document OCR</h4>
+                <p style="font-size: 12px; color: #888; margin-top: 6px;">
+                  Python • OpenCV • ML
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details-col">
+            <h3 class="project-name">AI &amp; OCR Document Automation</h3>
+
+            <p class="project-summary">
+              An automated image-parsing script that extracts clean, structured
+              tabular data out of noisy scans and PDFs. Preprocessed images
+              with OpenCV filters (grayscale, thresholding, deskewing) before
+              feeding them into OCR models to bump up extraction accuracy.
+            </p>
+
+            <p class="personal-quote">
+              The hardest part was handling blurry cellphone photos of printed
+              papers without breaking the parser.
+            </p>
+
+            <p class="project-stack">
+              <strong>Tech Stack:</strong> Python, EasyOCR, OpenCV, Pandas
+            </p>
+
+            <a href="#contact" class="btn btn-primary btn-sm">VIEW PROJECT NOTES</a>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+
+        <!-- Financial data processing project -->
+        <div class="project-showcase-row">
+          <div class="project-mockup-col">
+            <div class="mockup-frame">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+              </div>
+
+              <div class="mockup-display">
+                <span class="mockup-tag">Data Engineering</span>
+                <h4 class="mockup-title">Financial Data Pipeline</h4>
+                <p style="font-size: 12px; color: #888; margin-top: 6px;">
+                  SQL Server • Python • Tableau
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-details-col">
+            <h3 class="project-name">Financial Metrics &amp; Algorithmic Pipeline</h3>
+
+            <p class="project-summary">
+              Created data ingestion pipelines that calculate rolling averages
+              and asset volatility across historical datasets. Cleaned up raw
+              anomalies in SQL Server and plugged the final tables into Tableau
+              for easy visualization.
+            </p>
+
+            <p class="personal-quote">
+              Turns out 80% of data science really is just cleaning and
+              normalizing data before touching any dashboard.
+            </p>
+
+            <p class="project-stack">
+              <strong>Tech Stack:</strong> SQL Server, Python, Excel, Tableau
+            </p>
+
+            <a href="#contact" class="btn btn-primary btn-sm">VIEW PROJECT NOTES</a>
+          </div>
+
+          <div class="clear"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My roles in student organizations -->
+    <section id="experience" class="section-container bg-light">
+      <div class="section-content">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">CAMPUS LEADERSHIP</h2>
+          <div class="heading-bar"></div>
+
+          <p class="section-subtext">
+            When I'm not coding, I help run student operations and plan events
+            on campus.
+          </p>
+        </div>
+
+        <div class="card-timeline">
+          <div class="timeline-box">
+            <span class="timeline-role">Vice President of Operations</span>
+            <span class="timeline-org">
+              Graduate Student Council — University of New Haven
+            </span>
+
+            <p class="timeline-desc">
+              Organizing graduate student activities, managing logistics,
+              and advocating for student resources with university leadership.
+              It taught me how to coordinate between faculty and hundreds of
+              busy students.
+            </p>
+          </div>
+
+          <div class="timeline-box">
+            <span class="timeline-role">Vice President</span>
+            <span class="timeline-org">Indian Student Council</span>
+
+            <p class="timeline-desc">
+              Planned welcome events, mixers, and campus orientations for
+              incoming students. Lots of moving parts, budget spreadsheets,
+              and making sure everyone felt welcome and supported.
+            </p>
           </div>
         </div>
-        <div class="clear"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section-container bg-light contact-section">
-    <div class="section-content">
-      <div class="section-title-wrap">
-        <h2 class="section-heading">SAY HELLO</h2>
-        <div class="heading-bar"></div>
-        <p class="section-subtext">
-          Whether you want to discuss full-time roles, talk database queries, or just ask about graduate school—drop a message below!
-        </p>
+    <!-- Short notes about things I have learned -->
+    <section id="blog" class="section-container bg-white">
+      <div class="section-content">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">NOTES &amp; WRITING</h2>
+          <div class="heading-bar"></div>
+
+          <p class="section-subtext">
+            Short write-ups on things I’ve debugged, concepts I learned the
+            hard way, and quick study guides.
+          </p>
+        </div>
+
+        <div class="blog-grid">
+          <div class="blog-grid-item">
+            <div class="blog-card">
+              <h4 class="blog-card-title">
+                Why Your SQL Schema Matters Earlier Than You Think
+              </h4>
+
+              <p class="blog-card-text">
+                Fixing a bad database schema after you've already written all
+                your queries is painful. Here is why taking an afternoon to
+                normalize tables saves weeks of headaches.
+              </p>
+
+              <a href="#contact" class="blog-read-more">Read Notes &rarr;</a>
+            </div>
+          </div>
+
+          <div class="blog-grid-item">
+            <div class="blog-card">
+              <h4 class="blog-card-title">
+                Making OCR Actually Work on Crumpled Paper
+              </h4>
+
+              <p class="blog-card-text">
+                EasyOCR is great out of the box, but real-world scans are messy.
+                A few quick OpenCV thresholding tricks that helped fix my image
+                recognition accuracy.
+              </p>
+
+              <a href="#contact" class="blog-read-more">Read Notes &rarr;</a>
+            </div>
+          </div>
+
+          <div class="blog-grid-item">
+            <div class="blog-card">
+              <h4 class="blog-card-title">
+                Building My Notion 'Second Brain' For College
+              </h4>
+
+              <p class="blog-card-text">
+                How setting up the PARA method stopped me from losing lecture
+                bookmarks, project repos, and assignment deadlines during
+                heavy semesters.
+              </p>
+
+              <a href="#contact" class="blog-read-more">Read Notes &rarr;</a>
+            </div>
+          </div>
+
+          <div class="clear"></div>
+        </div>
       </div>
+    </section>
 
-      <div class="contact-card-box">
-        <form action="#contact" method="get" class="contact-form">
-          <div class="form-group">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" id="name" class="form-control" placeholder="e.g. SHardul " required>
-          </div>
-          <div class="form-group">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" id="email" class="form-control" placeholder="e.g. shardul@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="message" class="form-label">What's on your mind?</label>
-            <textarea id="message" class="form-control" rows="5" placeholder="Let's chat about a project, job opening, or tech in general..." required></textarea>
-          </div>
-          <div class="form-action">
-            <button type="button" class="btn btn-primary btn-submit">SEND MESSAGE</button>
-          </div>
-        </form>
+    <!-- Contact form with fields for a name, email, and message -->
+    <section id="contact" class="section-container bg-light contact-section">
+      <div class="section-content">
+        <div class="section-title-wrap">
+          <h2 class="section-heading">SAY HELLO</h2>
+          <div class="heading-bar"></div>
+
+          <p class="section-subtext">
+            Whether you want to discuss full-time roles, talk database queries,
+            or just ask about graduate school—drop a message below!
+          </p>
+        </div>
+
+        <div class="contact-card-box">
+          <form action="#contact" method="get" class="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-control"
+                     placeholder="e.g. SHardul " required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" class="form-control"
+                     placeholder="e.g. shardul@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">What's on your mind?</label>
+              <textarea id="message" class="form-control" rows="5"
+                        placeholder="Let's chat about a project, job opening, or tech in general..."
+                        required></textarea>
+            </div>
+
+            <div class="form-action">
+              <button type="button" class="btn btn-primary btn-submit">
+                SEND MESSAGE
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
+  </main>
+
+  <!-- My contact details and social links at the bottom -->
   <footer class="main-footer">
     <div class="footer-container">
       <div class="footer-left">
         <h3 class="footer-title">UTSAV KUNTALWAD</h3>
+
         <p class="footer-summary">
-          Computer Science Graduate Student at the University of New Haven. Focused on backend engineering, data modeling, and practical software solutions.
+          Computer Science Graduate Student at the University of New Haven.
+          Focused on backend engineering, data modeling, and practical
+          software solutions.
         </p>
+
         <p class="footer-direct-contact">
-          Email: <a href="mailto:ukunt1@unh.newhaven.edu">ukunt1@unh.newhaven.edu</a> • West Haven, CT
+          Email:
+          <a href="mailto:ukunt1@unh.newhaven.edu">ukunt1@unh.newhaven.edu</a>
+          • West Haven, CT
         </p>
       </div>
 
       <div class="footer-right">
         <h3 class="footer-title">FIND ME ONLINE</h3>
+
         <div class="social-links-wrap">
           <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
           <a href="https://github.com" target="_blank" class="social-icon">GitHub</a>
@@ -365,6 +504,7 @@
           <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
         </div>
       </div>
+
       <div class="clear"></div>
 
       <div class="footer-copyright">
