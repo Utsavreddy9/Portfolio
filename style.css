@@ -1,6 +1,4 @@
-/* ==========================================================================
-   1. Base Resets & Global Typography (Source Sans Pro, Dopefolio Design)
-   ========================================================================== */
+/* 1. Base Resets & Global Typography */
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +11,8 @@ html {
 
 body {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: #333333;
-  background-color: #FFFFFF;
+  color: #0f172a;
+  background-color: #ffffff;
   line-height: 1.6;
 }
 
@@ -23,7 +21,7 @@ body {
   clear: both;
 }
 
-/* Common Section Wrappers (1200px desktop lock) */
+/* Common Section Wrappers */
 .section-container {
   width: 100%;
   padding: 90px 0;
@@ -36,11 +34,11 @@ body {
 }
 
 .bg-white {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .bg-light {
-  background-color: #FAFAFA;
+  background-color: #f1f5f9;
 }
 
 /* Section Title Unit */
@@ -53,7 +51,7 @@ body {
   font-size: 34px;
   font-weight: 900;
   letter-spacing: 2px;
-  color: #111111;
+  color: #0f172a;
   text-transform: uppercase;
   margin-bottom: 14px;
 }
@@ -61,30 +59,28 @@ body {
 .heading-bar {
   width: 32px;
   height: 5px;
-  background-color: #7843E9; /* Dopefolio Signature Purple */
+  background-color: #1d4ed8;
   margin: 0 auto 20px auto;
   border-radius: 4px;
 }
 
 .section-subtext {
   font-size: 18px;
-  color: #666666;
+  color: #475569;
   max-width: 720px;
   margin: 0 auto;
   line-height: 1.6;
 }
 
-/* ==========================================================================
-   2. Header & Navigation (Fixed at top)
-   ========================================================================== */
+/* 2. Header & Navigation */
 .main-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
-  background-color: #FFFFFF;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-shadow: 0 10px 100px rgba(15, 23, 42, 0.1);
   z-index: 1000;
 }
 
@@ -110,8 +106,8 @@ body {
   vertical-align: middle;
   width: 44px;
   height: 44px;
-  background-color: #7843E9;
-  color: #FFFFFF;
+  background-color: #1d4ed8;
+  color: #ffffff;
   border-radius: 50%;
   font-weight: 900;
   font-size: 16px;
@@ -126,12 +122,12 @@ body {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1.5px;
-  color: #222222;
+  color: #0f172a;
   transition: color 0.2s ease;
 }
 
 .logo-link:hover .logo-name {
-  color: #7843E9;
+  color: #1d4ed8;
 }
 
 .nav-menu {
@@ -145,92 +141,105 @@ body {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #333333;
+  color: #0f172a;
   text-decoration: none;
   padding: 0 18px;
   transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-  color: #7843E9;
+  color: #1d4ed8;
 }
-/* ==========================================================================*/
+
+/* Status and Personal Details */
 .status-badge {
-      display: inline-block;
-      background-color: #E8F5E9;
-      color: #2E7D32;
-      border: 1px solid #C8E6C9;
-      font-size: 12px;
-      font-weight: 700;
-      padding: 6px 14px;
-      border-radius: 20px;
-      margin-bottom: 20px;
-      letter-spacing: 0.5px;
-    }
-    .status-pulse {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background-color: #2E7D32;
-      border-radius: 50%;
-      margin-right: 6px;
-      vertical-align: middle;
-    }
-    .now-box {
-      background: #FFFFFF;
-      border: 1px dashed #7843E9;
-      border-radius: 8px;
-      padding: 18px 22px;
-      margin-top: 24px;
-    }
-    .now-box h4 {
-      font-size: 14px;
-      color: #7843E9;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-    }
-    .now-box ul {
-      list-style-type: none;
-      padding-left: 0;
-      font-size: 14px;
-      color: #555555;
-    }
-    .now-box li {
-      margin-bottom: 6px;
-    }
-    .fun-facts {
-      margin-top: 25px;
-      padding-top: 15px;
-      border-top: 1px solid #EEEEEE;
-    }
-    .fun-facts span {
-      display: inline-block;
-      background: #F4F4F4;
-      border-radius: 15px;
-      padding: 5px 12px;
-      font-size: 12px;
-      color: #555555;
-      margin-right: 6px;
-      margin-bottom: 8px;
-    }
-    .personal-quote {
-      font-style: italic;
-      color: #666666;
-      border-left: 3px solid #7843E9;
-      padding-left: 12px;
-      margin: 12px 0;
-      font-size: 14px;
-    }
-/* ==========================================================================
-   3. Hero Section
-   ========================================================================== */
+  display: inline-block;
+  background-color: #dbeafe;
+  color: #1e40af;
+  border: 1px solid #bfdbfe;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.status-pulse {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #1d4ed8;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.now-box {
+  background: #ffffff;
+  border: 1px dashed #1d4ed8;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-top: 24px;
+}
+
+.now-box h4 {
+  font-size: 14px;
+  color: #1d4ed8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.now-box ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 14px;
+  color: #475569;
+}
+
+.now-box li {
+  margin-bottom: 6px;
+}
+
+.fun-facts {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #cbd5e1;
+}
+
+.fun-facts span {
+  display: inline-block;
+  background: #dbeafe;
+  border-radius: 15px;
+  padding: 5px 12px;
+  font-size: 12px;
+  color: #1e40af;
+  margin-right: 6px;
+  margin-bottom: 8px;
+}
+
+.personal-quote {
+  font-style: italic;
+  color: #475569;
+  border-left: 3px solid #1d4ed8;
+  padding-left: 12px;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+/* 3. Hero Section */
 .hero-section {
   width: 100%;
   height: 100vh;
   min-height: 650px;
-  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), 
-              radial-gradient(#d3d3d3 1px, transparent 1px);
+  background:
+    linear-gradient(
+      to right,
+      rgba(239, 246, 255, 0.8),
+      rgba(239, 246, 255, 0.8)
+    ),
+    radial-gradient(#93c5fd 1px, transparent 1px);
   background-size: 20px 20px;
   text-align: center;
   position: relative;
@@ -246,14 +255,14 @@ body {
   font-size: 50px;
   font-weight: 900;
   letter-spacing: 3px;
-  color: #111111;
+  color: #0f172a;
   text-transform: uppercase;
   margin-bottom: 24px;
 }
 
 .hero-subtext {
   font-size: 20px;
-  color: #444444;
+  color: #475569;
   max-width: 820px;
   margin: 0 auto 36px auto;
   line-height: 1.6;
@@ -273,16 +282,16 @@ body {
 }
 
 .btn-primary {
-  background-color: #7843E9;
-  color: #FFFFFF;
+  background-color: #1d4ed8;
+  color: #ffffff;
   padding: 16px 48px;
   font-size: 16px;
-  box-shadow: 0 5px 15px rgba(120, 67, 233, 0.3);
+  box-shadow: 0 5px 15px rgba(29, 78, 216, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(120, 67, 233, 0.4);
+  box-shadow: 0 8px 20px rgba(29, 78, 216, 0.4);
 }
 
 .btn-sm {
@@ -290,9 +299,7 @@ body {
   font-size: 13px;
 }
 
-/* ==========================================================================
-   4. About Me & Skills (Two-Column Layout via Floats)
-   ========================================================================== */
+/* 4. About Me & Skills */
 .about-two-col {
   width: 100%;
 }
@@ -310,13 +317,13 @@ body {
 .col-title {
   font-size: 22px;
   font-weight: 700;
-  color: #111111;
+  color: #0f172a;
   margin-bottom: 20px;
 }
 
 .col-text {
   font-size: 16px;
-  color: #555555;
+  color: #475569;
   margin-bottom: 16px;
   line-height: 1.7;
 }
@@ -325,7 +332,7 @@ body {
   margin-top: 24px;
 }
 
-/* Dopefolio Tag Cloud */
+/* Skills */
 .skills-cloud {
   padding-top: 6px;
 }
@@ -335,16 +342,14 @@ body {
   padding: 10px 18px;
   margin-right: 8px;
   margin-bottom: 14px;
-  background-color: #ECECEC;
-  color: #555555;
+  background-color: #dbeafe;
+  color: #1e40af;
   border-radius: 5px;
   font-size: 14px;
   font-weight: 600;
 }
 
-/* ==========================================================================
-   5. Projects Showcase Section (Mockup Left + Content Right)
-   ========================================================================== */
+/* 5. Projects Showcase */
 .project-showcase-row {
   margin-bottom: 80px;
   display: block;
@@ -360,11 +365,11 @@ body {
 }
 
 .mockup-frame {
-  background-color: #F0EDF6;
-  border: 1px solid #E2DCF0;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
   border-radius: 8px;
   padding: 12px 14px 40px 14px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
 }
 
 .mockup-header {
@@ -375,23 +380,23 @@ body {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background-color: #D1C7E8;
+  background-color: #93c5fd;
   border-radius: 50%;
   margin-right: 4px;
 }
 
 .mockup-display {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 6px;
   padding: 50px 24px;
   text-align: center;
-  border: 1px solid #E9E4F5;
+  border: 1px solid #dbeafe;
 }
 
 .mockup-tag {
   display: inline-block;
-  background-color: #7843E9;
-  color: #FFFFFF;
+  background-color: #1d4ed8;
+  color: #ffffff;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -403,7 +408,7 @@ body {
 .mockup-title {
   font-size: 18px;
   font-weight: 700;
-  color: #333333;
+  color: #0f172a;
 }
 
 .project-details-col {
@@ -415,64 +420,60 @@ body {
 .project-name {
   font-size: 24px;
   font-weight: 700;
-  color: #111111;
+  color: #0f172a;
   margin-bottom: 16px;
 }
 
 .project-summary {
   font-size: 16px;
-  color: #555555;
+  color: #475569;
   line-height: 1.7;
   margin-bottom: 14px;
 }
 
 .project-stack {
   font-size: 14px;
-  color: #777777;
+  color: #475569;
   margin-bottom: 24px;
 }
 
-/* ==========================================================================
-   6. Experience & Leadership Cards
-   ========================================================================== */
+/* 6. Experience & Leadership Cards */
 .card-timeline {
   width: 860px;
   margin: 0 auto;
 }
 
 .timeline-box {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 8px;
-  border-left: 5px solid #7843E9;
+  border-left: 5px solid #1d4ed8;
   padding: 26px 30px;
   margin-bottom: 22px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
 }
 
 .timeline-role {
   display: block;
   font-size: 18px;
   font-weight: 700;
-  color: #111111;
+  color: #0f172a;
 }
 
 .timeline-org {
   display: block;
   font-size: 14px;
   font-weight: 600;
-  color: #7843E9;
+  color: #1d4ed8;
   margin-bottom: 10px;
 }
 
 .timeline-desc {
   font-size: 15px;
-  color: #555555;
+  color: #475569;
   line-height: 1.6;
 }
 
-/* ==========================================================================
-   7. Blog / Articles Grid (3-Column Float)
-   ========================================================================== */
+/* 7. Blog / Articles */
 .blog-grid {
   width: 100%;
 }
@@ -484,8 +485,8 @@ body {
 }
 
 .blog-card {
-  background-color: #FAFAFA;
-  border: 1px solid #ECECEC;
+  background-color: #eff6ff;
+  border: 1px solid #dbeafe;
   border-radius: 8px;
   padding: 28px 24px;
   min-height: 250px;
@@ -494,14 +495,14 @@ body {
 .blog-card-title {
   font-size: 18px;
   font-weight: 700;
-  color: #111111;
+  color: #0f172a;
   margin-bottom: 12px;
   line-height: 1.4;
 }
 
 .blog-card-text {
   font-size: 14px;
-  color: #666666;
+  color: #475569;
   line-height: 1.6;
   margin-bottom: 18px;
 }
@@ -510,7 +511,7 @@ body {
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
-  color: #7843E9;
+  color: #1d4ed8;
   text-decoration: none;
 }
 
@@ -518,21 +519,24 @@ body {
   text-decoration: underline;
 }
 
-/* ==========================================================================
-   8. Contact Section & Modern Form
-   ========================================================================== */
+/* 8. Contact Section & Form */
 .contact-section {
-  background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), 
-              radial-gradient(#d3d3d3 1px, transparent 1px);
+  background:
+    linear-gradient(
+      to right,
+      rgba(239, 246, 255, 0.8),
+      rgba(239, 246, 255, 0.8)
+    ),
+    radial-gradient(#93c5fd 1px, transparent 1px);
   background-size: 20px 20px;
 }
 
 .contact-card-box {
   width: 780px;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 40px rgba(15, 23, 42, 0.08);
   padding: 44px 50px;
 }
 
@@ -545,26 +549,26 @@ body {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #666666;
+  color: #475569;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
 
 .form-control {
   width: 100%;
-  background-color: #F0F0F0;
-  border: 1px solid #E0E0E0;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
   border-radius: 5px;
   padding: 16px;
   font-size: 15px;
   font-family: inherit;
-  color: #333333;
+  color: #0f172a;
   outline: none;
 }
 
 .form-control:focus {
-  border-color: #7843E9;
-  background-color: #FFFFFF;
+  border-color: #1d4ed8;
+  background-color: #ffffff;
 }
 
 .form-action {
@@ -576,12 +580,10 @@ body {
   width: 180px;
 }
 
-/* ==========================================================================
-   9. Footer Section
-   ========================================================================== */
+/* 9. Footer */
 .main-footer {
-  background-color: #000000;
-  color: #FFFFFF;
+  background-color: #0f172a;
+  color: #ffffff;
   padding: 60px 0 30px 0;
 }
 
@@ -604,7 +606,7 @@ body {
 
 .footer-summary {
   font-size: 14px;
-  color: #CCCCCC;
+  color: #cbd5e1;
   line-height: 1.7;
   max-width: 480px;
   margin-bottom: 12px;
@@ -612,11 +614,11 @@ body {
 
 .footer-direct-contact {
   font-size: 13px;
-  color: #999999;
+  color: #cbd5e1;
 }
 
 .footer-direct-contact a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -633,7 +635,7 @@ body {
 .social-icon {
   display: inline-block;
   margin-left: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
@@ -641,14 +643,355 @@ body {
 }
 
 .social-icon:hover {
-  color: #7843E9;
+  color: #93c5fd;
 }
 
 .footer-copyright {
-  border-top: 1px solid #222222;
+  border-top: 1px solid #334155;
   margin-top: 40px;
   padding-top: 24px;
   font-size: 12px;
-  color: #777777;
+  color: #cbd5e1;
   text-align: center;
+}
+
+/* Assignment 3: flexible CSS Grid layout */
+body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.main-header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+  min-width: 0;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+.nav-container,
+.section-content,
+.hero-inner,
+.footer-container {
+  width: min(1200px, calc(100% - 48px));
+  max-width: 100%;
+  margin-inline: auto;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-logo,
+.nav-menu {
+  float: none;
+}
+
+.nav-menu {
+  justify-self: end;
+}
+
+.nav-link {
+  padding: 0 12px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.about-two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px;
+}
+
+.about-col-left,
+.about-col-right {
+  float: none;
+  width: auto;
+  min-width: 0;
+}
+
+.project-showcase-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.project-mockup-col,
+.project-details-col {
+  float: none;
+  width: auto;
+  min-width: 0;
+}
+
+.card-timeline,
+.contact-card-box {
+  width: min(100%, 860px);
+}
+
+.contact-card-box {
+  max-width: 780px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.blog-grid-item {
+  float: none;
+  width: auto;
+  padding: 0;
+  min-width: 0;
+}
+
+.blog-card {
+  height: 100%;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+}
+
+.footer-left,
+.footer-right {
+  float: none;
+  width: auto;
+  min-width: 0;
+}
+
+.footer-copyright {
+  grid-column: 1 / -1;
+  margin-top: 0;
+}
+
+.clear {
+  display: none;
+}
+
+.hero-section {
+  height: auto;
+  min-height: min(650px, 100svh);
+  padding: 190px 0 100px;
+}
+
+.section-container {
+  padding: 80px 0;
+  scroll-margin-top: 80px;
+}
+
+.hero-section {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 900px) {
+  .main-header {
+    height: auto;
+    min-height: 80px;
+  }
+
+  .nav-container {
+    min-height: 80px;
+  }
+
+  .nav-link {
+    padding: 0 5px;
+    font-size: 12px;
+  }
+
+  .logo-name {
+    font-size: 13px;
+  }
+
+  .about-two-col,
+  .project-showcase-row {
+    gap: 28px;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-title {
+    font-size: clamp(32px, 5vw, 50px);
+  }
+}
+
+@media (max-width: 650px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-container {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: relative;
+  }
+
+  .mobile-nav summary {
+    cursor: pointer;
+    color: #1d4ed8;
+    font-weight: 700;
+    padding: 10px;
+    list-style: none;
+  }
+
+  .mobile-nav summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .mobile-nav summary::after {
+    content: " ☰";
+  }
+
+  .mobile-nav[open] summary::after {
+    content: " ✕";
+  }
+
+  .mobile-nav nav {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: min(270px, calc(100vw - 24px));
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+  }
+
+  .mobile-nav a {
+    padding: 10px 12px;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .mobile-nav a:hover,
+  .mobile-nav a:focus-visible {
+    background: #eff6ff;
+  }
+
+  .about-two-col,
+  .project-showcase-row,
+  .footer-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .project-details-col {
+    padding-top: 0;
+  }
+
+  .blog-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+
+  .footer-copyright {
+    grid-column: 1;
+  }
+
+  .social-icon {
+    margin: 0 14px 8px 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .nav-container,
+  .section-content,
+  .hero-inner,
+  .footer-container {
+    width: calc(100% - 32px);
+  }
+
+  .avatar-circle {
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 6px;
+  }
+
+  .logo-name {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  .section-container {
+    padding: 56px 0;
+  }
+
+  .section-title-wrap {
+    margin-bottom: 36px;
+  }
+
+  .section-heading {
+    font-size: 28px;
+  }
+
+  .section-subtext {
+    font-size: 16px;
+  }
+
+  .hero-section {
+    min-height: 0;
+    padding: 145px 0 70px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+
+  .hero-subtext {
+    font-size: 17px;
+  }
+
+  .btn-primary {
+    padding: 14px 22px;
+    font-size: 14px;
+  }
+
+  .contact-card-box {
+    padding: 25px 18px;
+  }
+
+  .form-action {
+    text-align: left;
+  }
+
+  .btn-submit {
+    width: 100%;
+  }
+
+  .mockup-display {
+    padding: 32px 14px;
+  }
+
+  .main-footer {
+    padding: 48px 0 24px;
+  }
 }
